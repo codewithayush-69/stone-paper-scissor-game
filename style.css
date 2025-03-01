@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#effect{
+    background: radial-gradient(circle, red, blue);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bar {
+    width: 100%;
+    height: 200px;
+    animation: bgTransition 5s infinite ease-in-out;
+}
+
+h1{
+    height: 5rem;
+    width: 100%;
+    color: black;
+    text-align: center;
+    align-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    background:  radial-gradient(circle, rgb(253, 211, 22) 50%, rgb(0, 0, 0) 80%);
+}
+.choices{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0%;
+}
+.choice{
+    height: 100px;
+    width: 100px;
+    border-radius: 49%;
+    border: none;
+    margin: 2rem;
+}
+.choice:hover{
+    border: 3px solid black;
+    cursor: pointer;
+}
+.name{
+    display: flex;
+    font-size: 2rem;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+}
+.name p {
+    margin-left: 38px;
+    margin-right: 38px;
+}
+.result{
+    text-align: center;
+    align-items: center;
+}
+.result p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 3rem 5rem 3rem 5rem;
+    display: inline-block;
+}
+.screen{
+    display: flex;
+    justify-content: center;
+}
+.screen h2{
+    text-align: center;
+    background-color: chocolate;
+    padding: 0.5rem;
+    border-radius: 15px;
+    border: 3px solid white;
+}
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scoreboard p {
+    margin: 2rem 1rem 0 1rem;
+}
+.scoreboard p:nth-of-type(1){
+    background-color: blue;
+    padding: 3px 10px 3px 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: aliceblue;
+}
+.scoreboard p:nth-of-type(2){
+    background-color: rgb(47, 117, 19);
+    padding: 3px 10px 3px 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: aliceblue;
+}   
+#effects{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: changes 500ms infinite step-end;
+}
+@keyframes changes {
+    0% { background: rgb(151, 8, 8); }
+    35% { background: blue; }
+    65% { background: green; }
+}
