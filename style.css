@@ -46,8 +46,8 @@ h1{
     align-items: center;
 }
 .name p {
-    margin-left: 38px;
-    margin-right: 38px;
+    width: 100px;
+    margin: 0 2rem 0 2rem;
 }
 .result{
     text-align: center;
