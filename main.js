@@ -26,7 +26,7 @@ const playGame = (userChoice) => {
             }
             showingWinner(userWin, userChoice, compChoice);
         }
-    }, 3000); 
+    }, 3000);
     
 };
 
@@ -47,7 +47,6 @@ const gencompChoice = () => {
 const draw = () => {
     msg.innerText = "The game was a Draw. Choose again";
     msg.style.backgroundColor = "brown";
-    body.setAttribute("id","effect");
 };
 
 const showingWinner = (userWin, userChoice, compChoice) => { 
@@ -56,13 +55,11 @@ const showingWinner = (userWin, userChoice, compChoice) => {
         userScoreSpan.innerText = userScore;
         msg.innerText = `You win! Your ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor = "green";
-        body.setAttribute("id","effect");
     } else {
         compScore++;
         compScoreSpan.innerText = compScore;
         msg.innerText = `You lose. Computer's ${compChoice} beats your ${userChoice}`;
         msg.style.backgroundColor = "red";
-        body.setAttribute("id","effect");
     }
 };
 
@@ -70,5 +67,6 @@ const showresult = (userChoice, compChoice) => {
     setTimeout(() => {  
         mychoice.innerText = `You: ${userChoice}`;  
         comchoice.innerText = `Computer: ${compChoice}`;
+        body.setAttribute("id","effect");
     }, 3000);
 };
